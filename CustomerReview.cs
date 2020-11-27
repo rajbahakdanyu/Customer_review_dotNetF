@@ -15,6 +15,7 @@ namespace Customer_review_dotNetF
         public CustomerReview()
         {
             InitializeComponent();
+            BindGrid();
         }
 
         private void submitBtn_Click(object sender, EventArgs e)
@@ -59,5 +60,18 @@ namespace Customer_review_dotNetF
             serviceCombo.SelectedIndex = -1;
             enviromentCombo.SelectedIndex = -1;
         } //Clear all field
+
+        private void BindGrid()
+        {
+            Review obj = new Review();
+            List<Review> listReview = obj.List();
+            DataTable dt = Utility.ConvertToDataTable(listReview);
+            gridReview.DataSource = dt;
+        } //Binding gridView
+
+        private void BindChart(List<Review> list)
+        {
+
+        }
     }
 }

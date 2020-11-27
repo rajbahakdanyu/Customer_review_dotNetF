@@ -35,15 +35,5 @@ namespace Customer_review_dotNetF
             Utility.WriteToFile(_fileName, data);
             return true;
         }
-
-        public void Edit(Review info)
-        {
-
-        }
-
-        public void Delete(string phone)
-        {
-
-        }
     }
 }

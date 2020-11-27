@@ -44,6 +44,8 @@
             this.enviromentCombo = new System.Windows.Forms.ComboBox();
             this.suggestLb = new System.Windows.Forms.Label();
             this.suggestTxt = new System.Windows.Forms.TextBox();
+            this.gridReview = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.gridReview)).BeginInit();
             this.SuspendLayout();
             // 
             // nameLb
@@ -204,11 +206,22 @@
             this.suggestTxt.Size = new System.Drawing.Size(163, 126);
             this.suggestTxt.TabIndex = 15;
             // 
+            // gridReview
+            // 
+            this.gridReview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridReview.Location = new System.Drawing.Point(365, 10);
+            this.gridReview.Name = "gridReview";
+            this.gridReview.RowHeadersWidth = 51;
+            this.gridReview.RowTemplate.Height = 24;
+            this.gridReview.Size = new System.Drawing.Size(413, 240);
+            this.gridReview.TabIndex = 16;
+            // 
             // CustomerReview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(347, 474);
+            this.ClientSize = new System.Drawing.Size(803, 474);
+            this.Controls.Add(this.gridReview);
             this.Controls.Add(this.suggestTxt);
             this.Controls.Add(this.suggestLb);
             this.Controls.Add(this.enviromentCombo);
@@ -228,6 +241,7 @@
             this.Name = "CustomerReview";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CustomerReview";
+            ((System.ComponentModel.ISupportInitialize)(this.gridReview)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -251,5 +265,6 @@
         private System.Windows.Forms.ComboBox enviromentCombo;
         private System.Windows.Forms.Label suggestLb;
         private System.Windows.Forms.TextBox suggestTxt;
+        private System.Windows.Forms.DataGridView gridReview;
     }
 }
